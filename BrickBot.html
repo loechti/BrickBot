@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="stylesheet" type="text/css" href="./brickbot.css">    
+
+
+    <title>BrickBot</title>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./wordlist.js"></script>
+    <script src="./brickbot.js" type="text/javascript">
+</script>
+</head>
+
+<body data-feedly-mini="yes">
+    <div class="megawrapper">
+        <div class="header-bar">
+            <div class="header-content">
+                <span class="header-text">BrickBot - #LetsBuildIt Design Ideas</span>
+                <span class="header-container">Constraint
+                    <input type="checkbox" checked="checked" id="checkConstraint" onclick="render();">
+                    <span class="checkmark"></span>
+                Brick
+                    <input type="checkbox" checked="unchecked" id="checkBrick" onclick="render();">
+                    <span class="checkmark"></span>
+                  </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="randomized-text">
+                <div id="intro">Design a </div>
+
+                <div id="design-item">shovel </div>
+
+                <div id="constraint">that teaches you another language </div>
+                <div id="brick">using only 10 bricks</div>
+            </div>
+
+            <div class="nextbutton button">
+                <span class="author"><span class="buttontext" onclick="render();">New Idea</span></span>
+            </div>
+          
+        </div>
+
+        <div class="lowend">
+        <small> BrickBot is based on the idea <a href="https://protobot.org/#en">ProtoBot</a> by <a href="https://molly.is/">Molly Clare Wilson</a>. </small>
+          
+        </div>
+    </div>
+</body>
+</html>
